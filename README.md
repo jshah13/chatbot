@@ -24,6 +24,8 @@ The brains of our chatbot is a sequence-to-sequence (seq2seq) model. The goal of
 
 Sutskever et al. discovered that by using two separate recurrent neural nets together, we can accomplish this task. One RNN acts as an encoder, which encodes a variable length input sequence to a fixed-length context vector. In theory, this context vector (the final hidden layer of the RNN) will contain semantic information about the query sentence that is input to the bot. The second RNN is a decoder, which takes an input word and the context vector, and returns a guess for the next word in the sequence and a hidden state to use in the next iteration.
 
+![image](https://user-images.githubusercontent.com/45533954/92209466-f6af5180-ee84-11ea-9bfb-3a2949ae67ce.png)
+
 ## Results
 
 Looking at the below image, it is clear that the bot is quite dramatic in its responses which might be characteristic of using movie scripts. However, it is able to answer a diverse range of questions and so is quite successful overall.
